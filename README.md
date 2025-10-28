@@ -1,50 +1,75 @@
-# React + TypeScript + Vite
+# 🌦️ WeatherApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**WeatherApp** is a modern, feature-rich web application designed to provide **real-time weather updates** and **visual insights** in a clean, interactive interface.
+Built with a powerful modern stack — **TanStack Query**, **Shadcn UI**, **Recharts**, **Tailwind CSS**, and **TypeScript** — it delivers a seamless, efficient, and visually engaging user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+✅ **Real-Time Weather Data** — Fetches accurate, live weather information for any city or region
+📊 **Interactive Charts** — Uses **Recharts** to visualize temperature, humidity, and other weather metrics
+🌐 **Search by Location** — Instantly get weather details by city or coordinates
+💨 **Detailed Metrics** — Displays temperature, humidity, wind speed, and atmospheric pressure
+🌗 **Dynamic UI** — Beautiful, responsive design powered by **Shadcn UI** and **Tailwind CSS**
+⚡ **Optimized Performance** — Implements **TanStack Query** for data caching and efficient API management
+💻 **TypeScript Support** — Ensures better code reliability and scalability through static typing
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+| Technology                            | Purpose                                  |
+| ------------------------------------- | ---------------------------------------- |
+| **React + TypeScript**                | Core framework for building the app      |
+| **TanStack Query (React Query)**      | Manages server state and caching         |
+| **Shadcn UI**                         | Provides elegant, prebuilt UI components |
+| **Recharts**                          | For visualizing weather data trends      |
+| **Tailwind CSS**                      | Utility-first styling for responsiveness |
+| **OpenWeatherMap API** *(or similar)* | Source of real-time weather data         |
+
+---
+
+## 🧩 Project Highlights
+
+* 🌦️ Integrated real-time API for live weather updates
+* ⚡ Efficient state management and caching using **TanStack Query**
+* 🎨 Clean and responsive UI built with **Shadcn UI** and **Tailwind CSS**
+* 📈 Data visualization using **Recharts** for better weather insights
+* 🧠 Written in **TypeScript** for cleaner, maintainable, and bug-resistant code
+
+---
+
+## 🎯 Learning Outcomes
+
+Through this project, I enhanced my understanding of:
+
+* Asynchronous data fetching and API integration
+* Efficient state management with **TanStack Query**
+* Type safety and modular coding using **TypeScript**
+* Building reusable UI components with **Shadcn UI**
+* Implementing **data visualization** in real-world apps using **Recharts**
+* Designing responsive and accessible layouts with **Tailwind CSS**
+
+---
+
+## 🏃‍♂️ Run Locally
+
+Follow these steps to set up and run **WeatherApp** on your system:
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/your-username/WeatherApp.git
+cd WeatherApp
+
+# 2️⃣ Install dependencies
+npm install
+
+# 3️⃣ Start the development server
+npm run dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Then open your browser and visit the local server URL (usually `http://localhost:5173/`).
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
