@@ -59,7 +59,7 @@ Follow these steps to set up and run **WeatherApp** on your system:
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/your-username/WeatherApp.git
+git clone https://github.com/harshkale612/WeatherApp.git
 cd WeatherApp
 
 # 2️⃣ Install dependencies
